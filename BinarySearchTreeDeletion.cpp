@@ -110,13 +110,13 @@ void search_del()
 			{
 				del_leafNode(parent,check);
 			}
-			else if(check->left!=NULL && check->right!=NULL) //for a node with 2 children
+			else if(check->left!=NULL && check->right!=NULL) 
 			{
 				parent = check;
 				int value=del_twoChild(check->right,parent);
 				check->info=value;
 			}
-			else if(check->left!=NULL || check->right!=NULL) //if both will be null it will go in first case.
+			else if(check->left!=NULL || check->right!=NULL) 
 			{
 				del_singleChild(parent,check);
 			}

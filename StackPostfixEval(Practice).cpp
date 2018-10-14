@@ -30,7 +30,7 @@ class Evaluate
 		}
 		void evaluateExp()
 		{
-			//int res;
+
 			while(postfix[i] != '\0')
 			{
 				if(isdigit(postfix[i]))
@@ -70,7 +70,6 @@ class Evaluate
 				}
 				push(res);
 				i++;
-				//cout<<stack[top];
 			}
 		}
 		void display()

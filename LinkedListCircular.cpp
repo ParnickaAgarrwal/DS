@@ -60,7 +60,6 @@ class list
 				cout<<temp->data<<"\t";
 				temp = temp->next;
 			}while(temp != head);
-			//cout<<head->data;
 			cout<<endl;
 		}
 		void ins_beg(int v)
@@ -202,9 +201,9 @@ class list
 		}
 		void del_pre(int val)
 		{
-			node *pre; //= new node;
-			node *prepre;// = new node;
-			node *curr; //= new node;
+			node *pre;
+			node *prepre;
+			node *curr; 
 			curr = head;
 			pre = NULL;
 			prepre = NULL;

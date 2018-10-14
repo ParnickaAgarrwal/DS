@@ -19,7 +19,7 @@ class calculate
 			cout<<"Enter infix expression\n";
 			cin>>infix;
 			int len = strlen(infix);
-			infix[len] = ')'; //because if at last any operator is left in stack, we've to insert it in postfix.(we've condition that if infix[i]==')' then pop things from stack till we get '(' in stack and pop '(' too.
+			infix[len] = ')'; 
 			infix[len+1]='\0';
 			top++;
 			stack[top] = '(';

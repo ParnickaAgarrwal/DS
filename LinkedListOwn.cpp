@@ -24,7 +24,7 @@ class list
 			{
 				head = temp;
 				tail = temp;
-				temp = NULL; //freeing memory for optimization
+				temp = NULL; 
 			}
 			else
 			{
@@ -55,9 +55,9 @@ class list
 		{
 			node *temp = new node;
 			temp->value = num;
-			temp->next = NULL; //keeping the address NULL as it is inserted in the end
-			tail->next = temp; //giving it the new node's address
-			tail = temp; //keeping last node saved for later use again
+			temp->next = NULL;
+			tail->next = temp;
+			tail = temp; 
 		}
 		void insert_after(int num,int given)
 		{
@@ -100,7 +100,7 @@ class list
 			pre = NULL;
 			while(ptr!=NULL && ptr->value<num) 
 			{
-		//keep ptr->value<num as second condition because at last ptr will be null and it'll be checking if NULL->value<num?
+		
 				pre = ptr;
 				ptr = ptr->next;
 			}
@@ -121,7 +121,7 @@ class list
 		{
 			ptr = head;
 			head = ptr->next;
-			ptr->next = NULL; //to free the memory, even if you dont write it, code will work fine, its just for optimization.
+			ptr->next = NULL;
 		}
 		void del_end()
 		{
@@ -134,9 +134,9 @@ class list
 			}
 			copy->next = NULL;
 			tail = copy;
-			//delete ptr;
+			
 		}
-		void del_ele(int d) //doubt
+		void del_ele(int d) 
 		{
 			node *pre = new node;
 			pre = NULL;

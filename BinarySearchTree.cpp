@@ -138,7 +138,7 @@ void Level_order_traversing()
 		cout<<ptr->info<<"\t";
 		if(ptr->left != NULL)
 			myqueue.push(ptr->left);
-		if(ptr->right != NULL)  //we have to check both left and right, thats why we use if and if and not else.
+		if(ptr->right != NULL)  
 			myqueue.push(ptr->right);
 		ptr=myqueue.front();
 	}

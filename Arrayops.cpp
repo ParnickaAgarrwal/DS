@@ -16,7 +16,6 @@ int main()
 	{
 		cout<<arr[i]<<"\t";
 	}
-	//insertion
 	cout<<"\nEnter what value you want to insert at what position?\n";
 	cin>>val>>pos;
 	for(int i = n ; i > pos ; i --)
@@ -29,7 +28,6 @@ int main()
 	{
 		cout<<arr[i]<<"\t";
 	}
-	//deletion
 	int p,count = 0,del;
 	cout<<"\nIf you want to delete an element by giving its value press 1"; 
 	cout<<" and if you want to delete an element by giving its position then press 2\n";
@@ -89,7 +87,6 @@ int main()
 			cout<<"Enter a valid coice\n";
 			break;
 	}
-	//searching
 	int ser,c = 0;
 	cout<<"Enter what element you want to search\n";
 	cin>>ser;
@@ -109,7 +106,6 @@ int main()
 	{
 		cout<<"Element found at "<<c<<endl;
 	}
-	//display
 	cout<<"The array is now:\n";
 	for(int i = 0 ; i < n ; i ++)
 	{

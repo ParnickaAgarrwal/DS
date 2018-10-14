@@ -12,19 +12,6 @@ int main()
 	{
 		cin>>arr[i];
 	}
-	/*for(int i = 0 ; i < N - 1 ; i ++)
-	{
-		for(int j = 0 ; j < N - i - 1 ; j ++)
-		{
-			if(arr[j] > arr[j + 1])
-			{
-				arr[i] = temp;
-				arr[i] = arr[j];
-				arr[j] = temp;
-			}
-		}
-	}*/
-	
 	cout<<"Enter element to be searched\n";
 	cin>>ser;
 	int beg = 0;

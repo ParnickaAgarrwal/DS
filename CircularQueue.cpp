@@ -32,11 +32,11 @@ class cir_queue
 		int deque()
 		{
 			int temp=-1;
-			if(front==-1 && rear==-1) //no element
+			if(front==-1 && rear==-1) 
 			{
 				return temp;
 			}
-			else if(front==rear) //only one element
+			else if(front==rear) 
 			{
 				temp=arr[rear];
 				front=-1;

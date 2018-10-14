@@ -139,7 +139,7 @@ void del_beg()
 {
 	node *ptr = new node;
 	ptr = start;
-	if(ptr->next == NULL) //if there is only one element in the list
+	if(ptr->next == NULL) 
 		start = NULL;
 	else
 	{

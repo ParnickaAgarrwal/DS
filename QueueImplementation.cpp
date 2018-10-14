@@ -13,15 +13,15 @@ bool isEmpty()
 }
 void enqueue(int num)
 {
-	if(rear==MAX-1) //fully filled
+	if(rear==MAX-1) 
 		cout<<"Queue is full\n";
-	else if(isEmpty()) //if it is empty
+	else if(isEmpty())
 	{
 		++rear;
-		++front; //front is to be incremented inly at first time.
+		++front; 
 		queue[rear]=num;
 	}
-	else //if there are other elements
+	else 
 	{
 		rear++;
 		queue[rear]=num;

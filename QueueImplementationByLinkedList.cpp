@@ -19,7 +19,7 @@ class ListQueue
 		{
 			node *temp=new node;
 			temp->val=num;
-			temp->next=NULL; //insertion is to be done at rear end, i.e. at end...
+			temp->next=NULL; 
 			if(front==NULL)
 			{
 				front=temp;

@@ -16,7 +16,6 @@ int main()
 	{
 		cout<<a[i]<<"\t";
 	}
-	//searching
 	int s;
 	cout<<"\nEnter element to be searched\n";
 	cin>>s;
@@ -35,7 +34,6 @@ int main()
 	{
 		cout<<"Element not found\n";
 	}
-	//insertion
 	int ins,pos;
 	cout<<"Enter what integer element do you want to insert and at what position\n";
 	cin>>ins;
@@ -51,7 +49,6 @@ int main()
 		cout<<a[i]<<"\t";
 	}
 	cout<<endl;
-	//deletion
 	int del,count=0;
 	cout<<"enter what array element you want to delete.\n";
 	cin>>del;
@@ -78,7 +75,6 @@ int main()
 		}
 	}
 	cout<<endl;
-	//updation
 	int up,val;
 	cout<<"Enter element to be updated and its new value\n";
 	cin>>up>>val;
@@ -95,7 +91,6 @@ int main()
 		cout<<a[i]<<"\t";
 	}
 	cout<<endl;
-	//sorting
 	int temp;
 	for(int i = 0 ; i < n ; i ++)
 	{
