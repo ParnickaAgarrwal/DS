@@ -75,7 +75,7 @@ public:
         }
 
     }
-    void find_(int number)
+    void find_l(int number)
     {
         check=root;
         while(1)
@@ -92,10 +92,37 @@ public:
                     int value = del_two(check->right,ptr);
                     check->info = value;
                 }
-                else if(check->left!=NULL || check->right!=NULL) 
+                else if(check->left!=NULL || check->right!=NULL)
                 {
                     del_singleChild(ptr,check);
                 }
+                break;
+            }
+            else if(check->info < number && check->info != NULL)
+            {
+                ptr = check;
+                check = check->right;
+            }
+            else if(check->info >number && check->info != NULL)
+            {
+                ptr = check;
+                check = check->left;
+            }
+            else
+            {
+                cout<<"Not Found\n";
+            }
+        }
+    }
+
+	void find_(int number)
+    {
+        check=root;
+        while(1)
+        {
+            if(check->info == number)
+            {
+                cout<<"Number found\n";
                 break;
             }
             else if(check->info < number && check->info != NULL)
@@ -163,7 +190,7 @@ public:
 
     void se_del(int num)
     {
-        find_(num);
+        find_l(num);
     }
 
     void inorder(BST *node)
